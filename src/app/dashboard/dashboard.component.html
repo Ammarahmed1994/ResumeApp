@@ -1,0 +1,18 @@
+<div class="container dash">
+    <div class="row">
+        <h2>DASHBOARD<br><small>Applicants Table</small> </h2>
+        <ag-grid-angular style="width: 1000px; height: 300px;"
+         class="ag-theme-balham"
+          [enableSorting]="true"
+            [enableFilter]="true" 
+            [rowData]="rowData | async" 
+            [columnDefs]="columnDefs"
+            rowSelection="multiple">
+        </ag-grid-angular>
+        
+    </div>
+
+  <!-- <button onclick="deleteRow();">Delete Selected Row</button> -->
+        <button class="btn btn-lg-primary" (click)="logout()"> Logout</button>
+
+</div>
